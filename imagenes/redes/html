@@ -1,0 +1,32 @@
+    <header>
+        <nav class="header-barra-menu">
+            <div class="boton-menu"><a href="index_constructoraSA.html" class="botonNav"><img src="imagenes/constructoraLogo.png" class="imagen-logo" alt="constructoraLogo"></a></div>
+            <div class="boton-menu"><a href="index_constructoraSA.html" class="botonNav">Inicio</a></div>
+            <div class="boton-menu"><a href="sobreNosotros_constructoraSA.html" class="botonNav">Sobre Nosotros</a></div>
+            <div class="boton-menu"><a href="nuestrasObras.html" class="botonNav">Nuestras obras</a></div>
+            <div class="boton-menu"><a href="contacto.html" class="botonNav">Contacto</a></div>
+        </nav>
+    </header>
+    <main>
+        <div class="contenido-principal"> <!-- Contenedor Grid -->
+            <img src="" alt="">
+        <div>
+        <h3>
+            Constructora S.A.
+        </h3>
+        <div class="contenido-principal-animacion">
+
+        </div>    
+        <p> 
+            Somos un empresa constructora, comprometida con la sustentabilidad e involucrada en la implementación de sistemas integrados de energía solar térmica y eléctrica, que tiene por objeto un desarrollo coherente, consistente y exitoso mediante una alta calidad en cuanto a la ejecución de obras de infraestructura civil y prestación de servicios, procurando el cumplimiento de las exigencias del cliente. 
+        </p>
+    </main>   
+    <footer>
+        <div class="footer-redes-sociales">
+            <div class="boton-redes"><a link href="www.facebook.com" class="facebook"><img class="imagenRedes" src="imagenes\favicon_io\redes\facebook.png"></a></div>
+            <div class="boton-redes"><a href="#" class="whatsapp"><img class="imagenRedes" src="imagenes\favicon_io\redes\whatsapp.png"></a></div>
+            <div class="boton-redes"><a href="#" class="instagram"><img class="imagenRedes" src="imagenes\favicon_io\redes\instagram.png"></a></div>
+            <div class="boton-redes"><a href="#" class="youtube"><img class="imagenRedes" src="imagenes\favicon_io\redes\youtube.png"></a></div>
+            </ul> 
+        </div>
+    </footer>  
