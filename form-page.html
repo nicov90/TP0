@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="form-page.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+    </header>
+    <main>
+        <section class="main-container">
+            <div class="form-img">
+                <img src="img/form-illust.jpg" alt="man-filling-a-form-with-a-tablet">
+            </div>
+            <form class="form-container">
+                <label for="name">Nombre y Apellido</label><input type="text" class="form-input" id="name" required>
+                <label for="email">Correo Electrónico</label><input type="email" class="form-input" id="email" required>
+                <label for="phone-number">Teléfono</label><input type="tel" class="form-input" id="phone-number" required>
+                <label for="message">Mensaje</label><textarea class="form-input" id="form-message" required></textarea>
+                <input type="submit" class="form-input" id="send-button">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
