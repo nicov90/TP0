@@ -5,59 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo_constructoraSA.css"/>
+    <script src= "imagenes\js\all.min.js"></script>
     <link rel="icon" type="image/x-icon" href="imagenes/favicon_io/logo/favicon-32x32.png">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
     <title>Constructora SA</title>
 </head>
+
 <body>
-    <div class="index-container">
+    <div class="contenedor-index">
         <div class="menu">
-            <div id="boton-logo" class="logo"><a href="index_constructoraSA.html">
-                <img src="imagenes\constructoraLogoSm.png" alt="Logo constructora">
-            </a></div>
+            <div id="boton-logo" class="logo"><a href="index_constructoraSA.html"><img src="imagenes\logo\constructoraLogoSm.png" alt="Logo constructora"></a></div>
             <div class="botones-menu">
-                <div id="boton-menu" class="boton"><a href="index_constructoraSA.html">Inicio</a></div>
-                <div id="boton-menu" class="boton"><a href="sobreNosotros_constructoraSA.html">Sobre Nosotros</a></div>
-                <div id="boton-menu" class="boton"><a href="nuestrasObras.html">Nuestras obras</a></div>
-                <div id="boton-menu" class="boton"><a href="contacto.html">Contacto</a></div>
+                <ul>
+                    <li class="boton-menu"><div><a href="index_constructoraSA.html"><b>Inicio</b></a></div></li>
+                    <li class="boton-menu"><div><a href="sobreNosotros_constructoraSA.html"><b>Sobre Nosotros</b></a></div></li>
+                    <li class="boton-menu"><div><a href="nuestrasObras.html"><b>Nuestras obras</b></a></div></li>
+                    <li class="boton-menu"><div><a href="form_page_constructoraSA.html"><b>Contacto</b></a></div></li>
+                </ul>
             </div>
         </div>
-
-        <div class="main-content">
-            <div>
-                <h3 class="nombre-constructora">
-                    Constructora S.A.
-                </h3>
-            </div>
-            <div class="slides">
-                    <div >
-                        <img src="imagenes\carousel\carrusel1.png" class="d-block w-100" alt="Alquiler de equipos">
+   
+        <div class="contenido-principal">
+            <div><h2 class="nombre-constructora"><b>Constructora S.A.</b></h2></div>
+        
+            <div class="carrousel">
+                <div class="contenedor-grande-carrousel">
+                    <div>
+                        <ul class="imagenes-inicio-carrousel">
+                            <li class="imagen-carrousel"><div ><img src="imagenes\carrousel\carrusel1.png" class="d-block w-100" alt="Alquiler de equipos"></div></li>
+                            <li class="imagen-carrousel"><div><img src="imagenes\carrousel\carrusel2.png" class="d-block w-100" alt="Arquitectura"></div></li>
+                            <li class="imagen-carrousel"><div ><img src="imagenes\carrousel\carrusel3.png" class="d-block w-100" alt="Movimiento de suelos"></div></li>
+                        </ul>
+                    </div> 
+                                  
+                    <div class="flechas-carrousel">
+                        <i>Izquierda</i>
+                        <i>Derecha</i>
                     </div>
-                    <div >
-                        <img src="imagenes\carousel\carrusel2.png" class="d-block w-100" alt="Arquitectura">
-                    </div>
-                    <div >
-                        <img src="imagenes\carousel\carrusel3.png" class="d-block w-100" alt="Movimiento de suelos"> 
+                    <div>
+                        <ul class="puntos-carrousel">
+                            <li class="punto-carrousel"></li>
+                            <li class="punto-carrousel"></li>
+                            <li class="punto-carrousel"></li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
-            <div class="introduccion">
-                <p> 
-                    Somos un empresa constructora, comprometida con la sustentabilidad e involucrada en la implementación de sistemas integrados de energía solar térmica y eléctrica, que tiene por objeto un desarrollo coherente, consistente y exitoso mediante una alta calidad en cuanto a la ejecución de obras de infraestructura civil y prestación de servicios, procurando el cumplimiento de las exigencias del cliente. 
-                </p>
-            </div>            
+            
+        <div class="introduccion">
+            <p> 
+                Somos un empresa constructora, comprometida con la sustentabilidad e involucrada en la implementación de sistemas integrados de energía solar térmica y eléctrica, que tiene por objeto un desarrollo coherente, consistente y exitoso mediante una alta calidad en cuanto a la ejecución de obras de infraestructura civil y prestación de servicios, procurando el cumplimiento de las exigencias del cliente. 
+            </p>
+        </div>            
         </div>
         
         <div class="footer">
-            <div id="boton-redes" class="boton"><a link href="https://es-la.facebook.com" class="facebook"><img class="imagenRedes" src="imagenes\redes\facebook.png"></a></div>
-            <div id="boton-redes" class="boton"><a href="https://www.whatsapp.com/?lang=es" class="whatsapp"><img class="imagenRedes" src="imagenes\redes\whatsapp.png"></a></div>
-            <div id="boton-redes" class="boton"><a href="https://www.instagram.com" class="instagram"><img class="imagenRedes" src="imagenes\redes\instagram.png"></a></div>
-            <div id="boton-redes" class="boton"><a href="https://www.youtube.com" class="youtube"><img class="imagenRedes" src="imagenes\redes\youtube.png"></a></div>
+            <div class="boton-redes" ><a link href="https://es-la.facebook.com" class="facebook"><button><i class="fa-brands fa-square-facebook"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.whatsapp.com/?lang=es" class="whatsapp"><button><i class="fa-brands fa-square-whatsapp"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.instagram.com" class="instagram"><button><i class="fa-brands fa-square-instagram"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.youtube.com" class="youtube"><button> <i class="fa-brands fa-square-youtube"></i></button></a></div>
+        <br>
+        <p>Derechos reservados</p>
         </div>
-
-    </div>
-
+    </div> 
 </body>
 </html>
