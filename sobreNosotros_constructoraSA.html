@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_constructoraSA.css"/>
+    <script src= "imagenes\js\all.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon_io/logo/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+    <script src="form.js"></script>
+    <title>Constructora SA</title>
+    <style>
+
+    .div-contenedor{
+        background-color:transparent;
+        height: 400px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .aboutus-carousel{
+        width:100%;
+        position:absolute;
+        transform-style:preserve-3d;
+        animation: giro 5s infinite linear;
+    }
+    .aboutus-carousel:hover{
+        animation-play-state:paused;
+    }
+    .aboutus-carousel figure{
+        display:block;
+        position:absolute;
+        width:30%;
+        height:max-content;
+        left:35%;
+        top: 0;
+        background: lightgray;
+        overflow: hidden;
+        border: solid 0px black;
+    }
+ 
+    .aboutus-carousel figure:nth-child(1){ transform: rotateY(360deg) translateZ(200px);}
+    .aboutus-carousel figure:nth-child(2){ transform: rotateY(240deg) translateZ(200px);}
+    .aboutus-carousel figure:nth-child(3){ transform: rotateY(120deg) translateZ(200px);}
+
+    .aboutus-carousel img{
+       -webkit-filter: grayscale(1);
+        cursor:grab;
+        transition:cubic-bezier(0.215, 0.610, 0.355, 1) 2.5s;
+        width: 100%;
+    }
+    .aboutus-carousel img:hover{
+        -webkit-filter: grayscale(0);
+        transform: scale(1, 1.2);
+        background: white;   
+             
+    }
+
+
+    .image {
+    box-shadow: 0px 25px 25px 0 rgba(0,0,0,.1);
+    height:auto;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+    width: 100%;
+    }
+    
+    figure img {
+    border-radius: 5px;
+    height: 100%;
+    transition: all 3.23s ease;
+    width: 100%;
+    }
+    
+    .image figcaption {
+    color: #3d3d3d;
+    font-family:'Verdana, Geneva, Tahoma, sans-serif';
+    /*height: 200px;*/
+    left: 0;
+    line-height:normal;
+    position:absolute;
+    text-align:left;
+    text-transform:uppercase;
+    margin-right: 10px;
+    margin-left: 10px;
+    top: 10px;
+    transition: all .70s ease;
+    width: 97%;
+    align-items: center;
+    }
+
+
+    .image.fade figcaption {
+    opacity:0;
+    visibility: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    /*
+    .image.fade:hover > img {
+    opacity: 0;
+    visibility: hidden;
+    }
+    */
+    .image.fade:hover > figcaption {
+    opacity: 1;
+    visibility: visible;
+    position:relative;
+    }
+
+    @keyframes giro{
+        from{
+            transform: rotateY(360deg);
+        }
+        to{
+            transform: rotateY(0deg);
+        }
+    }
+    </style>
+</head>
+<body>
+ 
+
+    <header>
+        <div class="header">
+            <div class="menu">
+                <div id="boton-logo" class="logo"><a href="index_constructoraSA.html"><img src="imagenes\logo\constructoraLogoSm.png" alt="Logo constructora"></a></div>
+                <div class="botones-menu">
+                    <ul>
+                        <li class="boton-menu"><div><a href="index_constructoraSA.html"><b>Inicio</b></a></div></li>
+                        <li class="boton-menu"><div><a href="sobreNosotros_constructoraSA.html"><b>Sobre Nosotros</b></a></div></li>
+                        <li class="boton-menu"><div><a href="nuestrasObras.html"><b>Nuestras obras</b></a></div></li>
+                        <li class="boton-menu"><div><a href="form_page_constructoraSA.html"><b>Contacto</b></a></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section>  
+            <div class="div-contenedor">
+                <div class="aboutus-carousel" >
+                    <!--<figure><img src="" alt=""></figure>-->
+                    <figure class="image fade"><img src="./img/empresa.png" alt="">
+                            <figcaption>Somos una empresa especializada en el desarrollo inmobiliario con más de 20 años de experiencia en el mercado del Real Estate, alcanzando más de 30 desarrollos, y 200.000 m2 construidos.</figcaption>
+                    </figure>
+                    <figure class="image fade"><img src="./img/staff.png" alt="">
+                        <figcaption>Nuestra compañía está compuesta por un equipo profesional altamente cualificado que participa en el proceso del desarrollo inmobiliario: búsqueda e investigación de mercado, diseño arquitectónico, gerenciamiento de la construcción, ejecución financiera y posterior comercialización.</figcaption>
+                    </figure>
+                    <figure class="image fade"><img src="./img/proposito.png" alt="">
+                        <figcaption>Nuestro objetivo principal es desarrollar y crear proyectos de valor para construir el futuro juntos.</figcaption>
+                    </figure>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="boton-redes" ><a link href="https://es-la.facebook.com" class="facebook"><button><i class="fa-brands fa-square-facebook"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.whatsapp.com/?lang=es" class="whatsapp"><button><i class="fa-brands fa-square-whatsapp"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.instagram.com" class="instagram"><button><i class="fa-brands fa-square-instagram"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.youtube.com" class="youtube"><button> <i class="fa-brands fa-square-youtube"></i></button></a></div>
+        <br>
+        <p>Derechos reservados</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
