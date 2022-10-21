@@ -1,7 +1,8 @@
-.contenedor-index{
+.contenedor-index,.main-container{
     height: 100%;
-    width: 100%;
+    max-width: 1200px;
     background-color:white;
+    margin: 0 auto;
 }
 
 * {
@@ -10,32 +11,34 @@
     color: rgba(47, 48, 46, 0.897);
     text-decoration: none;
     text-align: center;
-    justify-content: center;
+}
+.menu{
+    text-align: start;
 }
 
     .menu {
-        display: flex;
-        width: 100%;
         height: 20%;
-        background-color: white; 
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
+        background-color: white;
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        
     }
 
         #boton-logo{
             background-color: white;
             height: 100%;
-            display: block;
-            margin: 1px;
-            object-fit: contain;
-
         }
 
         .botones-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: no-wrap;
             align-items: center;
-            align-self: center;
-            width: 80%;
+            padding: 20px 35px;
             text-decoration: none;
             background-color: rgba(172, 171, 140, 0.466);
             border-radius: 30px;
@@ -44,14 +47,12 @@
         }
 
         .boton-menu{
+            white-space: nowrap;
+            text-align: center;
             font-size: 25px; 
             background-color: #61615963;
-            padding: 10px;
-            width:fit-content;
-            height: fit-content;
-            display: inline-block;
+            padding: 20px;
             margin: 1%;
-            justify-content:space-around;
             text-decoration: none;
             border-radius: 30px;
             -webkit-border-radius: 30px;
@@ -179,20 +180,6 @@
             color: #b5c5cf;
             size: 14%;
         }
-
-
-@media all and (max-width=600px){
-    /* Menu "hamburguesa"*/
-    .menu{ 
-        display: grid;
-        grid-column: auto auto ;
-        grid-row: auto auto auto auto auto auto;
-        margin: 0.5%;
-        background-color: orange;
-        border: solid black;
-    }
-}
-
 .main-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -205,12 +192,15 @@
     margin: 64px 0;
 }
 .form-img img{
+    min-width: 330px;
     box-shadow: 15px 15px 25px rgb(167, 159, 159);
 }
 .form-container{
+    height: auto;
     background-color:rgba(172, 171, 140, 0.466);
     border: 2px solid rgba(0, 0, 0, 0.479);
     width: 85%;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -251,4 +241,121 @@
 #send-button:hover{
     cursor: pointer;
     background-color: rgb(255, 248, 240);
+}
+@media screen and (max-width: 1220px){
+    .menu{
+        width: 100%;
+    }
+    .form-img img{
+        width: 520px;
+    }
+    .carrousel{
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .contenido-carrousel{
+        height: 340px;
+    }
+}
+@media screen and (max-width: 1024px){
+    #boton-logo{
+        width: 160px;
+    }
+    .boton-menu{
+        font-size: 1.3em;
+    }
+    #logo{
+        width: 200px;
+    }
+    .form-img img{
+        width: 460px;
+    }
+    .contenido-carrousel{
+        height: 280px;
+    }
+}
+@media screen and (max-width: 860px){
+    .boton-menu{
+        padding: 15px 15px;
+        margin-right: 10px;
+    }
+    #logo{
+        width: 180px;
+    }
+    .botones-menu{
+        padding: 20px 15px;
+    }
+    .form-img img{
+        width: 360px;
+    }
+    .form-container{
+        width: 250px;
+    }
+    .contenido-carrousel{
+        height: 240px;
+    }
+}
+@media screen and (max-width: 768px){
+    .menu{
+        height: auto;
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+    #boton-logo{
+        margin: 0 auto;
+    }
+    #logo{
+        width: 160px;
+    }
+    .botones-menu{
+        padding: 15px 15vw;
+        flex-direction: column;
+        width: 90vw;
+        gap: 10px;
+    }
+    .boton-menu{
+        width: 300px;
+        padding: 15px 0;
+        font-size: 1.2em;
+    }
+    .main-container{
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        gap: 0;
+        justify-content: center;
+    }
+    .form-img{
+        margin-bottom: 20px;
+    }
+    .form-img img{
+        width: 60vw;
+    }
+    .form-container{
+        width: 90vw;
+    }
+    .carrousel{
+        width: 80vw;
+    }
+    .contenido-carrousel{
+        height: 29vw;
+    }
+    .aboutus-carousel figure{
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 480px){
+    .boton-menu{
+        width: 220px;
+        font-size: 1em;
+    }
+    .form-img img{
+        min-width: 250px;
+    }
+    .form-container{
+        min-width: 250px;
+    }
+    .nombre-constructora{
+        font-size: 20px;
+    }
 }
