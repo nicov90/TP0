@@ -196,6 +196,7 @@
     box-shadow: 15px 15px 25px rgb(167, 159, 159);
 }
 .form-container{
+    height: auto;
     background-color:rgba(172, 171, 140, 0.466);
     border: 2px solid rgba(0, 0, 0, 0.479);
     width: 85%;
@@ -248,6 +249,13 @@
     .form-img img{
         width: 520px;
     }
+    .carrousel{
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .contenido-carrousel{
+        height: 340px;
+    }
 }
 @media screen and (max-width: 1024px){
     #boton-logo{
@@ -261,6 +269,9 @@
     }
     .form-img img{
         width: 460px;
+    }
+    .contenido-carrousel{
+        height: 280px;
     }
 }
 @media screen and (max-width: 860px){
@@ -279,6 +290,9 @@
     }
     .form-container{
         width: 250px;
+    }
+    .contenido-carrousel{
+        height: 240px;
     }
 }
 @media screen and (max-width: 768px){
@@ -320,6 +334,15 @@
     .form-container{
         width: 90vw;
     }
+    .carrousel{
+        width: 80vw;
+    }
+    .contenido-carrousel{
+        height: 29vw;
+    }
+    .aboutus-carousel figure{
+        min-width: 300px;
+    }
 }
 @media screen and (max-width: 480px){
     .boton-menu{
@@ -331,5 +354,8 @@
     }
     .form-container{
         min-width: 250px;
+    }
+    .nombre-constructora{
+        font-size: 20px;
     }
 }
