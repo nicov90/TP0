@@ -27,7 +27,7 @@ form.addEventListener("submit", e=>{
         condicion = false;
     }
     if(telefono.value.length != 11){
-        warnings += `El teléfono debe <br> contener 10 caracteres <br>`;
+        warnings += `El teléfono no es valido`;
         condicion = false;
     }
     if (!condicion){
