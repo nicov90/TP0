@@ -220,7 +220,10 @@
     margin: 10px 0;
     border-radius: 20px;
     -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;  
+    -moz-border-radius: 20px;
+}
+.form-input:focus{
+    border: 3px solid #2f72be;
 }
 #form-message{
     height: 100px;
@@ -241,6 +244,17 @@
 #send-button:hover{
     cursor: pointer;
     background-color: rgb(255, 248, 240);
+}
+.warnings{
+    white-space: nowrap;
+    font-size: 19px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    margin: 5px auto;
+    color: #572658;
+    padding-top: 15px;
+    line-height: 25px;
 }
 @media screen and (max-width: 1220px){
     .menu{

@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
-    <script src="form.js"></script>
 </head>
 <body>
     <header>
@@ -35,25 +34,26 @@
             <div class="form-img">
                 <img src="img/form-illust.jpg" alt="man-filling-a-form-with-a-tablet">
             </div>
-            <form class="form-container">
+            <form class="form-container" id="form">
                 <label for="name">Nombre y Apellido</label><input type="text" class="form-input" id="name" required>
                 <label for="email">Correo Electrónico</label><input type="email" class="form-input" id="email" required>
-                <label for="phone-number">Teléfono</label><input type="tel" class="form-input" id="phone-number" required>
+                <label for="phone-number">Teléfono</label><input type="tel" class="form-input" id="phone-number" placeholder="01198765432" required>
                 <label for="message">Mensaje</label><textarea class="form-input" id="form-message" required></textarea>
                 <input type="submit" class="form-input" id="send-button">
+                <p class="warnings" id="warnings"></p>
             </form>
         </section>
     </main>
     <footer>
         <div class="footer">
-            <div class="boton-redes" ><a link href="https://es-la.facebook.com" class="facebook"><button><i class="fa-brands fa-square-facebook"></i></button></a></div>
-            <div class="boton-redes" ><a href="https://www.whatsapp.com/?lang=es" class="whatsapp"><button><i class="fa-brands fa-square-whatsapp"></i></button></a></div>
-            <div class="boton-redes" ><a href="https://www.instagram.com" class="instagram"><button><i class="fa-brands fa-square-instagram"></i></button></a></div>
-            <div class="boton-redes" ><a href="https://www.youtube.com" class="youtube"><button> <i class="fa-brands fa-square-youtube"></i></button></a></div>
+            <div class="boton-redes" ><a link href="https://es-la.facebook.com" class="facebook"><button><i class="fa-brands fa-2x fa-square-facebook"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.whatsapp.com/?lang=es" class="whatsapp"><button><i class="fa-brands fa-2x fa-square-whatsapp"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.instagram.com" class="instagram"><button><i class="fa-brands fa-2x fa-square-instagram"></i></button></a></div>
+            <div class="boton-redes" ><a href="https://www.youtube.com" class="youtube"><button> <i class="fa-brands fa-2x fa-square-youtube"></i></button></a></div>
         <br>
         <p>Derechos reservados</p>
         </div>
     </footer>
-    
+    <script src="form.js"></script>
 </body>
 </html>
