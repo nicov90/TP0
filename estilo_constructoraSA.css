@@ -89,6 +89,8 @@
 
         .carrousel{
             width: 100%;
+ 
+
         }
         
             .contenido-carrousel{
@@ -106,9 +108,8 @@
             .item-carrousel-imagen{
                 width: 100%;
                 height: 100%;
-                display: flex;
-                justify-self: baseline;
-                background-color:rgba(47, 48, 46, 0.479) ;
+
+                background-color:rgba(47, 48, 46, 0) ;
             }
         
             .flechas-carrousel{
@@ -155,7 +156,10 @@
             text-align: center ;
             font-size: large;
         }
-    
+    ul{
+        list-style: none;
+    }
+
     .footer{
         width: 100%;
         height: 20%;
@@ -163,8 +167,8 @@
 
         .boton-redes{
             background-color: white;
-            width: 40px;
-            height: 40px;
+            width: 60px;
+            height: 60px;
             display: inline-block;
             margin: 25px;
             align-self: center;
@@ -175,11 +179,8 @@
             -moz-border-radius: 20px;  
         }
 
-        .boton-redes:hover{
-            background-color:#2f30305e;
-            color: #b5c5cf;
-            size: 14%;
-        }
+
+
 .main-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -250,12 +251,16 @@
         width: 520px;
     }
     .carrousel{
-        margin: 0 auto;
-        width: fit-content;
+        max-width: 100%;
     }
-    .contenido-carrousel{
-        height: 340px;
-    }
+    .item-carrousel-imagen{
+        display: flex;
+        justify-self: center;
+  }
+    .item-carrousel-imagen img{
+        max-width: 100%;
+        max-height: 100%;
+  }
 }
 @media screen and (max-width: 1024px){
     #boton-logo{
@@ -270,9 +275,17 @@
     .form-img img{
         width: 460px;
     }
-    .contenido-carrousel{
-        height: 280px;
+    .carrousel{
+        max-width: 100%;
     }
+    .item-carrousel-imagen{
+        display: flex;
+        justify-self: center;
+    }
+    .item-carrousel-imagen img{
+        max-width: 100%;
+        max-height: 100%;
+  }
 }
 @media screen and (max-width: 860px){
     .boton-menu{
@@ -291,9 +304,17 @@
     .form-container{
         width: 250px;
     }
-    .contenido-carrousel{
-        height: 240px;
+    .carrousel{
+        max-width: 100%;
     }
+    .item-carrousel-imagen{
+        display: flex;
+        justify-self: center;
+  }
+  .item-carrousel-imagen img{
+        max-width: 100%;
+         max-height: 100%;
+  }
 }
 @media screen and (max-width: 768px){
     .menu{
@@ -331,14 +352,19 @@
     .form-img img{
         width: 60vw;
     }
+    .carrousel{
+        max-width: 100%;
+    }
     .form-container{
         width: 90vw;
     }
-    .carrousel{
-        width: 80vw;
+    .item-carrousel-imagen{
+        display: flex;
+      justify-self: center;
     }
-    .contenido-carrousel{
-        height: 29vw;
+    .item-carrousel-imagen img{
+      max-width: 100%;
+      max-height: 100%;
     }
     .aboutus-carousel figure{
         min-width: 300px;
@@ -351,6 +377,20 @@
     }
     .form-img img{
         min-width: 250px;
+    }
+    .carrousel{
+        max-width: 100%;
+    }
+    .item-carrousel{
+        max-width: 400px;
+    }
+    .item-carrousel-imagen{
+        display: flex;
+        justify-self: center;
+    }
+    .item-carrousel-imagen img{
+        max-width: 100%;
+        max-height: 100%;
     }
     .form-container{
         min-width: 250px;
